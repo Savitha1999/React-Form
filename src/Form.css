@@ -1,0 +1,121 @@
+input[type=text]
+{
+    width: 75%;
+    padding: 20px;
+    border-radius: 20px;
+    background-image:url('./images/users.png') ;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px 23px;
+    padding-left: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type=tel]
+{
+    width: 75%;
+    padding: 20px;
+    border-radius: 20px;
+    background-image:url('./images/mobile.png') ;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px 23px;
+    padding-left: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type=email]
+{
+    width: 75%;
+    padding: 20px;
+    border-radius: 20px;
+    background-image:url('./images/mails.png') ;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px 23px;
+    padding-left: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type=password]
+{
+    width: 75%;
+    padding: 20px;
+    border-radius: 20px;
+    background-image:url('./images/passwords.png') ;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px 23px;
+    padding-left: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container
+{
+    border: 2px solid black;
+}
+
+
+
+label
+{
+    width: 20%;
+    color: blue;
+}
+
+.gender
+{
+    margin-left: 30px;
+    
+}
+
+input,
+select
+{
+    margin-left: 10px;
+}
+
+.check
+{
+    margin-left: 15px;
+}
+
+select 
+{
+    padding: 8px;
+    color:white;
+    background-color: black;
+}
+
+p
+{
+    font-weight: bold;
+}
+
+input[type=submit]
+{
+    padding: 10px;
+    width: 25%;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: orange;
+}
+
+input
+{
+    border:2px solid black;
+}
+
+
+.correct-input {
+    border: 2px solid green;
+}
+
+.incorrect-input {
+    border: 2px solid red;
+
+}
