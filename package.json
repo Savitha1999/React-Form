@@ -2,6 +2,7 @@
   "name": "task17",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.savitha.online/form/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -9,6 +10,7 @@
     "formik": "^2.4.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^10.0.5",
     "web-vitals": "^2.1.4"

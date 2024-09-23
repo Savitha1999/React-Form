@@ -1,113 +1,86 @@
-input[type=text]
-{
-    width: 75%;
+
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password] {
+    width: 100%; 
     padding: 20px;
     border-radius: 20px;
-    background-image:url('./images/users.png') ;
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: 10px 23px;
     padding-left: 40px;
-    margin-left: 10px;
+    margin-left: 0; 
     cursor: pointer;
 }
 
-input[type=tel]
-{
-    width: 75%;
-    padding: 20px;
-    border-radius: 20px;
-    background-image:url('./images/mobile.png') ;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: 10px 23px;
-    padding-left: 40px;
-    margin-left: 10px;
-    cursor: pointer;
+input[type=text] {
+    background-image: url('./images/users.png');
 }
 
-input[type=email]
-{
-    width: 75%;
-    padding: 20px;
-    border-radius: 20px;
-    background-image:url('./images/mails.png') ;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: 10px 23px;
-    padding-left: 40px;
-    margin-left: 10px;
-    cursor: pointer;
+input[type=tel] {
+    background-image: url('./images/mobile.png');
 }
 
-input[type=password]
-{
-    width: 75%;
-    padding: 20px;
-    border-radius: 20px;
-    background-image:url('./images/passwords.png') ;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: 10px 23px;
-    padding-left: 40px;
-    margin-left: 10px;
-    cursor: pointer;
+input[type=email] {
+    background-image: url('./images/mails.png');
 }
 
-.container
-{
+input[type=password] {
+    background-image: url('./images/passwords.png');
+}
+
+.container {
     border: 2px solid black;
+    padding: 20px; 
 }
 
-
-
-label
-{
-    width: 20%;
+label {
+    display: block; 
+    width: auto;
     color: blue;
+    margin-bottom: 10px; 
 }
 
-.gender
-{
-    margin-left: 30px;
-    
-}
-
+.gender,
 input,
-select
-{
-    margin-left: 10px;
+select {
+    margin-left: 0;
 }
 
-.check
-{
-    margin-left: 15px;
+.check {
+    margin-left: 0; 
 }
 
-select 
-{
+select {
+    width: 100%; 
     padding: 8px;
-    color:white;
+    color: white;
     background-color: black;
 }
 
-p
-{
+p {
     font-weight: bold;
 }
 
-input[type=submit]
-{
+.btn {
     padding: 10px;
-    width: 25%;
+    width: 70%; 
     font-weight: bold;
     border-radius: 25px;
     background-color: orange;
+    margin-top: 10px; 
+    margin-left: 15%;
 }
 
-input
+.btn:hover
 {
-    border:2px solid black;
+    background-color: green;
+    color: white;
+}
+
+input {
+    border: 2px solid black;
 }
 
 
@@ -117,5 +90,44 @@ input
 
 .incorrect-input {
     border: 2px solid red;
-
 }
+
+
+@media (max-width: 768px) {
+    label {
+        font-size: 14px; 
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=password] {
+        padding-left: 35px; 
+    }
+    
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=password] {
+        padding: 15px; 
+        font-size: 14px; 
+    }
+    
+    input[type=submit] {
+        padding: 15px;
+        
+    }
+
+    .btn
+    {
+        width: 100%;
+    }
+}
+

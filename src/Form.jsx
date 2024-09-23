@@ -114,7 +114,7 @@ export default function Form() {
     return (
         <>
 
-        <div className="container w-50">
+        <div className="container forms w-50 mt-3">
             <div className="bg-primary text-white text-center mt-2 p-4 ">
             <h1> FORM VALIDATION </h1>
             </div>
@@ -195,8 +195,11 @@ export default function Form() {
 
                 <label> GENDER : </label>
                 <input type="radio" name="gender" disabled={radiod}  value="MALE" onChange={(e) => setGender(e.target.value)} /> Male
+                <br />
                 <input type="radio" name="gender" disabled={radiod}  className="gender" value="FEMALE" onChange={(e) => setGender(e.target.value)} /> Female
+                <br />
                 <input type="radio" name="gender" disabled={radiod} className="gender" value="OTHERS" onChange={(e) => setGender(e.target.value)} /> Others
+                <br />
                 <p className="text-danger">{genderError}</p>
                 <br />
 
@@ -220,15 +223,20 @@ export default function Form() {
 
                 <label> LANGUAGE : </label>
                 <input type="checkbox"  value="Tamil" onChange={(e) => handleCheckbox(e.target.value)} /> Tamil
+                <br />
                 <input type="checkbox" className="check" value="English" onChange={(e) => handleCheckbox(e.target.value)} /> English
-                <input type="checkbox" className="check" value="Hindi" onChange={(e) => handleCheckbox(e.target.value)} /> Hindi
+                <br />
+                <input type="checkbox" className="check " value="Hindi" onChange={(e) => handleCheckbox(e.target.value)} /> Hindi
+                <br />
                 <input type="checkbox" className="check" value="French" onChange={(e) => handleCheckbox(e.target.value)} /> French
+                <br />
                 <input type="checkbox" className="check" value="Spanish" onChange={(e) => handleCheckbox(e.target.value)} /> Spanish
+                <br />
                 <p className="text-danger">{checkboxError}</p>
                 <br />
                 <br />
 
-                <input type="submit" value="Register" />
+                <button className="btn"> Register </button>
             </form>
             </div>
 
@@ -240,8 +248,4 @@ export default function Form() {
         </>
     );
 }
-
-
-
-
 
