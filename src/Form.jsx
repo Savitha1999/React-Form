@@ -121,7 +121,9 @@ export default function Forms() {
                             <label> GENDER: </label>
                             <div className="form-check">
                                 <input type="radio" className="form-check-input" name="gender" value="MALE" onChange={(e) => setGender(e.target.value)} /> Male
+                                <br />
                                 <input type="radio" className="form-check-input" name="gender" value="FEMALE" onChange={(e) => setGender(e.target.value)} /> Female
+                               <br />
                                 <input type="radio" className="form-check-input" name="gender" value="OTHERS" onChange={(e) => setGender(e.target.value)} /> Others
                             </div>
                             <div className="text-danger">{genderError}</div>
